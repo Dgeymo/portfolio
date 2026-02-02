@@ -13,11 +13,13 @@ import Education from "./components/Education.jsx";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [language, setLanguage] = useState("es");
+  const [darkSet, setDarkSet] = useState(false);
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   useEffect(() => {
-    if (darkMode || prefersDark) {
+    if (darkMode || prefersDark && !darkSet) {
       document.documentElement.classList.add("dark");
       setDarkMode(true);
+      setDarkSet(true);
     } else {
       document.documentElement.classList.remove("dark");
     }
