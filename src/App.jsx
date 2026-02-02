@@ -11,10 +11,29 @@ import Education from "./components/Education.jsx";
 
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-  const [language, setLanguage] = useState("es");
-  const [darkSet, setDarkSet] = useState(false);
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const getInitialLanguage = () => {
+    const savedLanguage = localStorage.getItem("language");
+    return savedLanguage ? savedLanguage : "es";
+  }
+  const getInitialDarkMode = () => {
+    const savedMode = localStorage.getItem("darkMode");
+    return savedMode ? JSON.parse(savedMode) : false;
+  }
+  
+  const [darkSet, setDarkSet] = useState(false);
+  const [darkMode, setDarkMode] = useState(getInitialDarkMode());
+  const [language, setLanguage] = useState(getInitialLanguage());
+
+  
+  useEffect(() => {
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+  }, [darkMode]);
+
+  useEffect(() => {
+    localStorage.setItem("language", language);
+  }, [language]);
+
   useEffect(() => {
     if (darkMode || prefersDark && !darkSet) {
       document.documentElement.classList.add("dark");
@@ -23,12 +42,14 @@ function App() {
     } else {
       document.documentElement.classList.remove("dark");
     }
+
     if (language === "es") {
       i18n.changeLanguage("es");
     } else {
       i18n.changeLanguage("en");
     }
   }, [darkMode, language]);
+  
   const projects = JSON.parse(JSON.stringify(projectsData));
   return (
     <>
@@ -40,7 +61,7 @@ function App() {
         <ProjectsCarousel projects={projects} />
         <Education />
       </div>
-        <Footer />
+      <Footer />
     </>
   );
 }
