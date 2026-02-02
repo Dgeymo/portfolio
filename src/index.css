@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply bg-neutral-100 text-gray-900 dark:bg-neutral-950 dark:text-stone-300 transition-colors duration-500;
+}
+html {
+  scroll-behavior: smooth;
+}

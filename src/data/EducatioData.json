@@ -1,0 +1,32 @@
+[
+    {
+      "institutionKey": "education.ort.institution",
+      "titleKey": "education.ort.title",
+      "detailsKeys": ["education.ort.details.1", "education.ort.details.2"]
+    },
+    {
+      "institutionKey": "education.p4h.institution",
+      "titleKey": "education.p4h.title",
+      "detailsKeys": ["education.p4h.details.1", "education.p4h.details.2"]
+    },
+    {
+      "institutionKey": "education.utec.institution",
+      "titleKey": "education.utec.title",
+      "detailsKeys": [
+        "education.utec.details.1",
+        "education.utec.details.2",
+        "education.utec.details.3",
+        "education.utec.details.4"
+      ]
+    },
+    {
+      "institutionKey": "education.cordoba.institution",
+      "titleKey": "education.cordoba.title",
+      "detailsKeys": ["education.cordoba.details.1", "education.cordoba.details.2"]
+    },
+    {
+      "institutionKey": "education.extra.institution",
+      "titleKey": "education.extra.title",
+      "detailsKeys": ["education.extra.details.1"]
+    }
+  ]

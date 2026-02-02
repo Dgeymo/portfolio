@@ -1,0 +1,88 @@
+{
+  "header": {
+    "title": "My Portfolio",
+    "mode": {
+      "light": "light",
+      "dark": "dark"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "role": "Full Stack Developer",
+    "description": "Advanced student of Information Technology Analyst. Experience in creating web applications using modern technologies. I love learning and exploring new tools and frameworks."
+  },
+  "technology": {
+    "title": "Technologies",
+    "coreLanguages": "Core Languages",
+    "frameworksAndLibraries": "Frameworks and Libraries",
+    "databases": "Databases",
+    "toolsAndPlatforms": "Tools and Platforms"
+  },
+  "experience": {
+    "title": "Experience",
+    "company": "EQUITAL S.A. | Montevideo, Uruguay | 2005 - Present",
+    "skill1": "Project Management:",
+    "detailsSkill1": "Coordination and planning of infrastructure, applying transferable methodologies to IT.",
+    "skill2": "Teamwork:",
+    "detailsSkill2": "Intersectoral collaboration, key for multidisciplinary projects in software development.",
+    "skill3": "Digital Innovation:",
+    "detailsSkill3": "Implementation of advanced technological solutions, optimizing intersectoral processes by 30%.",
+    "skill4": "Leadership:",
+    "detailsSkill4": "Training staff in new technologies, fostering continuous improvement and adoption of new tools."
+  },
+  "education": {
+    "title": "Education",
+    "ort": {
+      "institution": "Universidad ORT Uruguay",
+      "title": "Information Technology Analyst",
+      "details": {
+        "1": "Start: 2024 – Present | GPA 97% | Currently 5 of 6 semesters",
+        "2": "Intermediate Title: Web Programmer – issued 1/09/2025"
+      }
+    },
+    "p4h": {
+      "institution": "P4H Bionics Academy",
+      "title": "Webinar on Bionic Prosthesis Development",
+      "details": {
+        "1": "Certificate issued 11/10/2025 | 120 minutes + exam passed with 95",
+        "2": "Course in bionic prosthesis development – 15/10/2025 – Present"
+      }
+    },
+    "utec": {
+      "institution": "UTEC",
+      "title": "Cyber Fundamentals",
+      "details": {
+        "1": "Cyber Fundamentals of Networks (30h, 23/10/2025)",
+        "2": "Cyber Fundamentals of Linux (30h, 16/11/2025)",
+        "3": "Cyber Fundamentals of Databases (MySQL and SQLServer) (30h, 16/11/2025)",
+        "4": "Cyber Fundamentals of Programming and Web Servers (30h, 16/11/2025)"
+      }
+    },
+    "cordoba": {
+      "institution": "National University of Córdoba",
+      "title": "Python Certifications",
+      "details": {
+        "1": "Certification 1: Python Fundamentals (20h, 18/01/2026)",
+        "2": "Certification 2: Data analysis and visualization with Python, Numpy and Matplotlib (15h, 22/01/2026)"
+      }
+    },
+    "extra": {
+      "institution": "Complementary Training",
+      "title": "Technical Planning Supervisor",
+      "details": {
+        "1": "Coordination and control of telecommunications projects"
+      }
+    }
+  },
+  "projects": {
+    "title": {
+      "academy": "My Academic Projects",
+      "personal": "My Personal Projects",
+      "professional": "My Professional Projects"
+    }
+  },
+  "footer": {
+    "cta": "Contact Me"
+  },
+  "seeMore": "See More"
+}
