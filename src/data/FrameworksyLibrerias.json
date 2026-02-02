@@ -1,0 +1,32 @@
+[
+  {
+    "text": "ENTITY FRAMEWORK",
+    "color": "bg-purple-800",
+    "textColor": "text-gray-50",
+    "logo": "SiDotnet"
+  },
+  {
+    "text": "SPRING BOOT",
+    "color": "bg-orange-600",
+    "textColor": "text-gray-50",
+    "logo": "FaJava"
+  },
+  {
+    "text": "NODE.JS",
+    "color": "bg-green-500",
+    "textColor": "text-gray-50",
+    "logo": "FaNode"
+  },
+  {
+    "text": "EXPRESS.JS",
+    "color": "bg-gray-700",
+    "textColor": "text-gray-50",
+    "logo": "SiExpress"
+  },
+  {
+    "text": "REACT",
+    "color": "bg-gray-950",
+    "textColor": "text-gray-50",
+    "logo": "FaReact"
+  }
+]

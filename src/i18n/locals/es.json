@@ -1,0 +1,88 @@
+{
+  "header": {
+    "title": "Mi Portafolio",
+    "mode": {
+      "light": "claro",
+      "dark": "oscuro"
+    }
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "role": "Desarrollador Full Stack",
+    "description": "Estudiante avanzado de Analista en Tecnologías de la Información. Experiencia en la creación de aplicaciones web utilizando tecnologías modernas. Me encanta aprender y explorar nuevas herramientas y frameworks."
+  },
+  "technology": {
+    "title": "Tecnologías",
+    "coreLanguages": "Lenguajes Core",
+    "frameworksAndLibraries": "Frameworks y librerías",
+    "databases": "Bases de datos",
+    "toolsAndPlatforms": "Herramientas y plataformas"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "company": "EQUITAL S.A. | Montevideo, Uruguay | 2005 - Presente",
+    "skill1": "Gestión de Proyectos:",
+    "detailsSkill1": "Coordinación y planificación de infraestructura, aplicando metodologías transferibles a IT.",
+    "skill2": "Trabajo en Equipo:",
+    "detailsSkill2": "Colaboración intersectorial, clave para proyectos multidisciplinarios en desarrollo de software.",
+    "skill3": "Innovación Digital:",
+    "detailsSkill3": "Implementación de soluciones tecnológicas avanzadas, optimizando procesos intersectoriales en un 30%.",
+    "skill4": "Liderazgo:",
+    "detailsSkill4": "Capacitación de personal en nuevas tecnologías, fomentando mejora continua y adopción de nuevas herramientas."
+  },
+  "education": {
+    "title": "Formación",
+    "ort": {
+      "institution": "Universidad ORT Uruguay",
+      "title": "Analista en Tecnologías de la Información",
+      "details": {
+        "1": "Inicio: 2024 – Actualidad | Escolaridad promedio 97% | Cursando 5 de 6 semestres",
+        "2": "Título intermedio: Programador Web – emitido el 1/09/2025"
+      }
+    },
+    "p4h": {
+      "institution": "P4H Bionics Academy",
+      "title": "Webinar sobre desarrollo de prótesis biónicas",
+      "details": {
+        "1": "Certificado emitido 11/10/2025 | 120 minutos + examen aprobado con 95",
+        "2": "Curso en desarrollo de prótesis biónicas – 15/10/2025 – Actualidad"
+      }
+    },
+    "utec": {
+      "institution": "UTEC",
+      "title": "Fundamentos Cyber",
+      "details": {
+        "1": "Fundamentos de Cyber de redes (30Horas) emitido el 23/10/2025",
+        "2": "Fundamentos Cyber de Linux (30Horas) emitido el 16/11/2025",
+        "3": "Fundamentos Cyber de Bases de Datos (MySQL y SQLServer) (30Horas) emitido el 16/11/2025",
+        "4": "Fundamentos Cyber de Programación y Servidores Web (30Horas) emitido el 16/11/2025"
+      }
+    },
+    "cordoba": {
+      "institution": "Universidad Nacional de Córdoba",
+      "title": "Certificaciones en Python",
+      "details": {
+        "1": "Certificación 1: Fundamentos de Python (20h, 18/01/2026)",
+        "2": "Certificación 2: Análisis y visualización de datos con Python, Numpy y Matplotlib (15h, 22/01/2026)"
+      }
+    },
+    "extra": {
+      "institution": "Formación Complementaria",
+      "title": "Supervisor de Planificación Técnica",
+      "details": {
+        "1": "Coordinación y control de proyectos de telecomunicaciones"
+      }
+    }
+  },
+  "projects": {
+    "title": {
+      "academy": "Mis Proyectos Académicos",
+      "personal": "Mis Proyectos Personales",
+      "professional": "Mis Proyectos Profesionales"
+    }
+  },
+  "footer": {
+    "cta": "Contactame"
+  },
+  "seeMore": "Ver más"
+}

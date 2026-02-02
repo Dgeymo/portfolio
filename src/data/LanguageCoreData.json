@@ -1,0 +1,38 @@
+[
+  {
+    "text": ".NET",
+    "color": "bg-purple-800",
+    "textColor": "text-gray-50",
+    "logo": "SiDotnet"
+  },
+  {
+    "text": "JAVA",
+    "color": "bg-orange-600",
+    "textColor": "text-gray-50",
+    "logo": "FaJava"
+  },
+  {
+    "text": "JAVASCRIPT",
+    "color": "bg-yellow-400",
+    "textColor": "",
+    "logo": "FaJs"
+  },
+  {
+    "text": "HTML5",
+    "color": "bg-orange-600",
+    "textColor": "text-gray-50",
+    "logo": "FaHtml5"
+  },
+  {
+    "text": "CSS3",
+    "color": "bg-cyan-600",
+    "textColor": "text-gray-50",
+    "logo": "FaCss3Alt"
+  },
+  {
+    "text": "PYTHON",
+    "color": "bg-yellow-600",
+    "textColor": "text-gray-50",
+    "logo": "FaPython"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Proyecto integrador de Diseño de Interfaz Web",
+    "type": "Web App",
+    "technologies": ["HTML5", "CSS3", "Bootstrap"],
+    "forDestination": "Diseño de Interfaz Web - ORT",
+    "description": "Desarrollar una página web responsiva para una evento a elección, utilizando HTML5 y CSS3 para la estructura y el diseño, y Bootstrap para asegurar la compatibilidad con dispositivos móviles y mejorar la experiencia del usuario.",
+    "objective": "Aplicar los principios de diseño web y usabilidad aprendidos en el curso para crear una experiencia de usuario atractiva y funcional.",
+    "date": "H1 2024",
+    "githubLink": "https://github.com/Dgeymo/Obligatorio_Diseno_Web",
+    "liveLink": "#"
+  },
+  {
+    "title": "Proyecto integrador de Programación 1",
+    "type": "Web App",
+    "technologies": ["Javascript", "HTML5", "CSS3"],
+    "forDestination": "Programación 1 - ORT",
+    "description": "Simular una plataforma de compras y ventas online, permitiendo a los usuarios compradores registrarse, iniciar sesión, visualizar productos, realizar compras, consultar su historial y cancelar operaciones. Por otro lado, los administradores cuentan con funcionalidades para gestionar el catálogo: crear productos, modificar stock, activar o desactivar ofertas y revisar las ventas realizadas, incluyendo informes de ganancias.  ",
+    "objective": "Reforzar los conocimientos adquiridos en el curso de Programación 1, aplicando conceptos fundamentales de desarrollo web y gestión de datos en una plataforma funcional.",
+    "date": "H1 2024",
+    "githubLink": "https://github.com/Dgeymo/Obligatorio_Programacion1",
+    "liveLink": "#"
+  },
+  {
+    "title": "Proyecto integrador de Programación 2",
+    "type": "Web App",
+    "technologies": ["C#"],
+    "forDestination": "Programación 2 - ORT",
+    "description": "Desarrollar una aplicación de escritorio para la gestión de una biblioteca, permitiendo a los usuarios registrar nuevos libros, buscar y filtrar libros existentes, gestionar préstamos y devoluciones, y generar informes sobre el estado de los libros y las actividades de los usuarios.",
+    "objective": "Aplicar los conocimientos adquiridos en el curso de Programación 2, enfocándose en la programación orientada a objetos",
+    "date": "H2 2024",
+    "githubLink": "https://github.com/Dgeymo/Obligatorio_Programacion2",
+    "liveLink": "#"
+  },
+  {
+    "title": "Proyecto integrador de Programación 3",
+    "type": "Web App",
+    "technologies": [".NET", "C#", "Entity Framework", "SQL Server"],
+    "forDestination": "Programación 3 - ORT",
+    "description": "Crear una aplicación web para la gestión de tareas y proyectos, permitiendo a los usuarios registrarse, iniciar sesión, crear y asignar tareas, establecer fechas límite, y realizar un seguimiento del progreso de los proyectos.",
+    "objective": "Consolidar los conocimientos adquiridos en el curso de Programación 3, enfocándose en el desarrollo de aplicaciones web utilizando el framework .NET y prácticas de desarrollo modernas.",
+    "date": "H1 2025",
+    "githubLink": "https://github.com/Dgeymo/Obligatorio_Programacion3",
+    "liveLink": "#"
+  },
+  {
+    "title": "Proyecto integrador de Algoritmos y Estructuras de Datos",
+    "type": "Console App",
+    "technologies": ["Java"],
+    "forDestination": "Algoritmos y Estructuras de Datos - ORT",
+    "description": "Desarrollar una aplicación de consola que implemente diversas estructuras de datos (listas, pilas, colas, árboles) y algoritmos (búsqueda, ordenamiento) para resolver problemas comunes en la gestión de datos.",
+    "objective": "Aplicar los conceptos y técnicas aprendidos en el curso de Algoritmos y Estructuras de Datos, mejorando la eficiencia y efectividad en la manipulación y gestión de datos.",
+    "date": "H1 2025",
+    "githubLink": "https://github.com/Dgeymo/Obligatorio_Algoritmos_EstructurasDatos",
+    "liveLink": "#"
+  },
+  {
+    "title": "Proyecto integrador de Diseño de Aplicaciones",
+    "type": "Web App",
+    "technologies": ["JAVA", "Spring Boot"],
+    "forDestination": "Diseño de Aplicaciones - ORT",
+    "description": "Desarrollo de una aplicacion de peajes para la gestion de vehiculos que ingresan y salen de una autopista. La aplicacion permite registrar vehiculos, calcular tarifas de peaje segun el tipo de vehiculo y el tiempo de permanencia, generar reportes de ingresos y gestionar usuarios del sistema.",
+    "objective": "Aplicar los conocimientos adquiridos en el curso de Diseño de Aplicaciones, enfocándose en la aplicacion de principios de diseño de software y patrones arquitectonicos para crear una aplicacion robusta y escalable.",
+    "date": "H2 2025",
+    "githubLink": "https://github.com/Dgeymo/Obligatorio_Diseño_Aplicaciones",
+    "liveLink": "#"
+  },
+  {
+    "title": "Proyecto integrador de Full Stack en el Backend (Parte 1)",
+    "type": "Api RESTful con node.js",
+    "technologies": ["Node.js", "Express", "MongoDB"],
+    "forDestination": "Full Stack - ORT",
+    "description": "Desarrollar una API RESTful para la gestión de una tienda en línea, permitiendo a los usuarios realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en productos, categorías y usuarios.",
+    "objective": "Aplicar los conocimientos adquiridos en el curso de Full Stack, enfocándose en el desarrollo de APIs robustas y escalables utilizando Node.js y Express.",
+    "date": "H2 2025",
+    "githubLink": "https://github.com/Dgeymo/Obligatorio_FullStack_BackEnd",
+    "liveLink": "#"
+  },
+  {
+    "title": "Proyecto integrador de Full Stack en el Frontend (Parte 2)",
+    "type": "Web App",
+    "technologies": ["React", "CSS3", "HTML5"],
+    "forDestination": "Full Stack - ORT",
+    "description": "Desarrollar una aplicación web para la gestión de tareas y proyectos, permitiendo a los usuarios registrarse, iniciar sesión, crear y asignar tareas, establecer fechas límite, y realizar un seguimiento del progreso de los proyectos.",
+    "objective": "Consolidar los conocimientos adquiridos en el curso de Full Stack, enfocándose en el desarrollo de interfaces de usuario interactivas y responsivas utilizando React.",
+    "date": "H2 2025",
+    "githubLink": "https://github.com/Dgeymo/Obligatorio_FullStack_FrontEnd",
+    "liveLink": "#"
+  }
+]
