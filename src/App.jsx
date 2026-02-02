@@ -18,10 +18,12 @@ function App() {
   }
   const getInitialDarkMode = () => {
     const savedMode = localStorage.getItem("darkMode");
-    return savedMode ? JSON.parse(savedMode) : false;
+    if (savedMode) {
+      return JSON.parse(savedMode);
+    }
+    return prefersDark;
   }
   
-  const [darkSet, setDarkSet] = useState(false);
   const [darkMode, setDarkMode] = useState(getInitialDarkMode());
   const [language, setLanguage] = useState(getInitialLanguage());
 
@@ -35,20 +37,20 @@ function App() {
   }, [language]);
 
   useEffect(() => {
-    if (darkMode || prefersDark && !darkSet) {
+    if (darkMode) {
       document.documentElement.classList.add("dark");
-      setDarkMode(true);
-      setDarkSet(true);
     } else {
       document.documentElement.classList.remove("dark");
     }
+  }, [darkMode]);
 
+  useEffect(() => {
     if (language === "es") {
       i18n.changeLanguage("es");
     } else {
       i18n.changeLanguage("en");
     }
-  }, [darkMode, language]);
+  }, [language]);
   
   const projects = JSON.parse(JSON.stringify(projectsData));
   return (
