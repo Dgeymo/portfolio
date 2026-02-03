@@ -4,13 +4,17 @@ import {
   FaLinkedinIn,
   FaFileAlt,
   FaEnvelope,
+  FaPhone,
 } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import portada from "../assets/portada.png";
 const About = () => {
   const { t } = useTranslation();
   return (
-    <section id="about" className="px-6 py-16 bg-gray-50 dark:bg-gray-800 items-center transition-all duration-500">
+    <section
+      id="about"
+      className="px-6 py-16 bg-gray-50 dark:bg-gray-800 items-center transition-all duration-500"
+    >
       <div className="flex text-center md:items-start flex-col mx-auto md:text-left backdrop-blur rounded-md">
         <div className="flex flex-col items-center md:flex-row space-y-2 ">
           <figure className="md:flex-shrink-0">
@@ -21,7 +25,6 @@ const About = () => {
             />
           </figure>
           <div className="ml-0 md:ml-6">
-
             <h1 className="text-6xl font-bold my-2">Diego Geymonat</h1>
             <h2 className="text-2xl font-bold text-green-700 dark:text-green-500 pb-2">
               {t("about.role")}
@@ -30,8 +33,8 @@ const About = () => {
               <FaMapMarkerAlt className="mr-2" />
               <p className="font-semibold">Montevideo - Uruguay</p>
             </div>
-            <ul className="md:flex items-center md:space-x-3 text-center text-sm mt-3">
-              <li className="flex items-center mt-3 md:m-0 md:w-60 h-8 border-green-600 text-green-700 dark:text-green-500 hover:text-gray-50 hover:bg-green-600 dark:hover:text-gray-50 dark:hover:bg-green-600 dark:border-green-500 border-2 rounded-3xl font-semibold transition-all duration-500">
+            <ul className="md:flex items-center md:space-x-3 text-center text-sm mt-3 font-semibold">
+              <li className="flex items-center mt-3 md:m-0 md:w-60 h-8 border-green-600 text-green-700 dark:text-green-500 hover:text-gray-50 hover:bg-green-600 dark:hover:text-gray-50 dark:hover:bg-green-600 dark:border-green-500 border-2 rounded-3xl transition-all duration-500">
                 <a
                   className="w-full flex flex-row items-center text-center justify-center"
                   href="mailto:dgeymonat84@gmail.com"
@@ -42,35 +45,51 @@ const About = () => {
                   <span>dgeymonat84@gmail.com</span>
                 </a>
               </li>
-              <li className="flex items-center justify-items-center mt-3 md:m-0 md:w-12 h-8 border-green-600 text-green-700 hover:text-gray-50 hover:bg-green-600 dark:hover:text-gray-50 dark:hover:bg-green-600 dark:border-green-500 border-2 dark:text-green-500 rounded-3xl transition-all duration-500">
+              <li className=" flex items-center justify-items-center mt-3 md:m-0 md:w-12 h-8 border-green-600 text-green-700 hover:text-gray-50 hover:bg-green-600 dark:hover:text-gray-50 dark:hover:bg-green-600 dark:border-green-500 border-2 dark:text-green-500 rounded-3xl transition-all duration-500">
                 <a
-                  className="w-full"
-                  href="#"
-                  download="Diego_Geymonat_CV.pdf"
+                  className="w-full flex justify-center items-center"
+                  href="CV_DGeymonat.pdf"
+                  download="CV_DGeymonat.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaFileAlt className="w-full text-xl" />
+                  <FaFileAlt className="md:w-full  text-xl mr-4 md:mr-0" />
+                  <span className=" md:hidden inline">
+                    {t("about.download_cv")}
+                  </span>
                 </a>
               </li>
               <li className="flex items-center justify-items-center mt-3 md:m-0 md:w-12 h-8 border-green-600 text-green-700 hover:text-gray-50 hover:bg-green-600  dark:border-green-500 border-2 dark:text-green-500 dark:hover:bg-green-500 dark:hover:text-gray-50 rounded-3xl transition-all duration-500">
                 <a
-                  className="w-full"
+                  className="w-full flex justify-center items-center"
                   href="https://github.com/dgeymo"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaGithub className="text-xl w-full" />
+                  <FaGithub className="text-xl mr-4 md:mr-0" />
+                  <span className="md:hidden inline">GitHub</span>
                 </a>
               </li>
               <li className="flex items-center justify-items-center mt-3 md:m-0 md:w-12 h-8 border-green-600 text-green-700 hover:text-gray-50 hover:bg-green-700  dark:border-green-500 border-2 dark:text-green-500 dark:hover:bg-green-500 dark:hover:text-gray-50 rounded-3xl transition-all duration-500">
                 <a
-                  className="w-full"
+                  className="w-full flex justify-center items-center"
                   href="https://www.linkedin.com/in/dgeymonat/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaLinkedinIn className="text-xl w-full" />
+                  <FaLinkedinIn className="text-xl mr-4 md:mr-0" />
+                  <span className="md:hidden inline"> LinkedIn</span>
+                </a>
+              </li>
+              <li className="flex items-center justify-items-center mt-3 md:m-0 md:w-12 h-8 border-green-600 text-green-700 hover:text-gray-50 hover:bg-green-700  dark:border-green-500 border-2 dark:text-green-500 dark:hover:bg-green-500 dark:hover:text-gray-50 rounded-3xl transition-all duration-500">
+                <a
+                  className="w-full flex justify-center items-center"
+                  href="phone:+59894466583"
+                  rel="noopener noreferrer"
+                  title={t("about.call_me")}
+                >
+                  <FaPhone className="text-xl mr-4 md:mr-0" />
+                  <span className="md:hidden inline"> +598 94466583</span>
                 </a>
               </li>
             </ul>
