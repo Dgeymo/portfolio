@@ -4,10 +4,10 @@ import {
   FaLinkedinIn,
   FaFileAlt,
   FaEnvelope,
-  FaPhone,
 } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import portada from "../assets/portada.png";
+import CallOrWhatsApp from "./CallOrWhatsApp";
 const About = () => {
   const { t } = useTranslation();
   return (
@@ -82,15 +82,7 @@ const About = () => {
                 </a>
               </li>
               <li className="flex items-center justify-items-center mt-3 md:m-0 md:w-12 h-8 border-green-600 text-green-700 hover:text-gray-50 hover:bg-green-700  dark:border-green-500 border-2 dark:text-green-500 dark:hover:bg-green-500 dark:hover:text-gray-50 rounded-3xl transition-all duration-500">
-                <a
-                  className="w-full flex justify-center items-center"
-                  href="phone:+59894466583"
-                  rel="noopener noreferrer"
-                  title={t("about.call_me")}
-                >
-                  <FaPhone className="text-xl mr-4 md:mr-0" />
-                  <span className="md:hidden inline"> +598 94466583</span>
-                </a>
+                <CallOrWhatsApp className="w-full flex justify-center items-center" />
               </li>
             </ul>
           </div>
