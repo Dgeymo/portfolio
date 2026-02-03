@@ -9,7 +9,9 @@
   "about": {
     "title": "Sobre Mí",
     "role": "Desarrollador Full Stack",
-    "description": "Estudiante avanzado de Analista en Tecnologías de la Información. Experiencia en la creación de aplicaciones web utilizando tecnologías modernas. Me encanta aprender y explorar nuevas herramientas y frameworks."
+    "description": "Estudiante avanzado de Analista en Tecnologías de la Información. Experiencia en la creación de aplicaciones web utilizando tecnologías modernas. Me encanta aprender y explorar nuevas herramientas y frameworks.",
+    "download_cv": "Descargar CV",
+    "call_me": "Mi Número de Teléfono: +598 94466583"
   },
   "technology": {
     "title": "Tecnologías",
