@@ -1,88 +1,184 @@
 [
   {
-    "title": "Proyecto integrador de Diseño de Interfaz Web",
+    "title": { 
+      "es": "Proyecto integrador de Diseño de Interfaz Web",
+      "en": "Integrated Project for Web Interface Design"
+    },
     "type": "Web App",
     "technologies": ["HTML5", "CSS3", "Bootstrap"],
-    "forDestination": "Diseño de Interfaz Web - ORT",
-    "description": "Desarrollar una página web responsiva para una evento a elección, utilizando HTML5 y CSS3 para la estructura y el diseño, y Bootstrap para asegurar la compatibilidad con dispositivos móviles y mejorar la experiencia del usuario.",
-    "objective": "Aplicar los principios de diseño web y usabilidad aprendidos en el curso para crear una experiencia de usuario atractiva y funcional.",
+    "forDestination": {
+      "es": "Diseño de Interfaz Web - ORT",
+      "en": "Web Interface Design - ORT"
+    },
+    "description": {
+      "es": "Desarrollar una página web responsiva para un evento a elección, utilizando HTML5 y CSS3 para la estructura y el diseño, y Bootstrap para asegurar la compatibilidad con dispositivos móviles y mejorar la experiencia del usuario.",
+      "en": "Develop a responsive website for an event of your choice, using HTML5 and CSS3 for structure and styling, and Bootstrap to ensure mobile compatibility and enhance the user experience."
+    },
+    "objective": {
+      "es": "Aplicar los principios de diseño web y usabilidad aprendidos en el curso para crear una experiencia de usuario atractiva y funcional.",
+      "en": "Apply web design and usability principles learned in the course to create an engaging and functional user experience."
+    },
     "date": "H1 2024",
     "githubLink": "https://github.com/Dgeymo/Obligatorio_Diseno_Web",
     "liveLink": "#"
   },
   {
-    "title": "Proyecto integrador de Programación 1",
+    "title": { 
+      "es": "Proyecto integrador de Programación 1",
+      "en": "Integrated Project for Programming 1"
+    },
     "type": "Web App",
     "technologies": ["Javascript", "HTML5", "CSS3"],
-    "forDestination": "Programación 1 - ORT",
-    "description": "Simular una plataforma de compras y ventas online, permitiendo a los usuarios compradores registrarse, iniciar sesión, visualizar productos, realizar compras, consultar su historial y cancelar operaciones. Por otro lado, los administradores cuentan con funcionalidades para gestionar el catálogo: crear productos, modificar stock, activar o desactivar ofertas y revisar las ventas realizadas, incluyendo informes de ganancias.  ",
-    "objective": "Reforzar los conocimientos adquiridos en el curso de Programación 1, aplicando conceptos fundamentales de desarrollo web y gestión de datos en una plataforma funcional.",
+    "forDestination": {
+      "es": "Programación 1 - ORT",
+      "en": "Programming 1 - ORT"
+    },
+    "description": {
+      "es": "Simular una plataforma de compras y ventas online, permitiendo a los usuarios compradores registrarse, iniciar sesión, visualizar productos, realizar compras, consultar su historial y cancelar operaciones. Por otro lado, los administradores cuentan con funcionalidades para gestionar el catálogo: crear productos, modificar stock, activar o desactivar ofertas y revisar las ventas realizadas, incluyendo informes de ganancias.",
+      "en": "Simulate an online buying and selling platform, allowing buyers to register, log in, view products, make purchases, check their history, and cancel operations. Administrators can manage the catalog: create products, modify stock, enable or disable offers, and review sales, including profit reports."
+    },
+    "objective": {
+      "es": "Reforzar los conocimientos adquiridos en el curso de Programación 1, aplicando conceptos fundamentales de desarrollo web y gestión de datos en una plataforma funcional.",
+      "en": "Reinforce knowledge acquired in Programming 1 by applying fundamental web development and data management concepts in a functional platform."
+    },
     "date": "H1 2024",
     "githubLink": "https://github.com/Dgeymo/Obligatorio_Programacion1",
     "liveLink": "#"
   },
   {
-    "title": "Proyecto integrador de Programación 2",
+    "title": { 
+      "es": "Proyecto integrador de Programación 2",
+      "en": "Integrated Project for Programming 2"
+    },
     "type": "Web App",
     "technologies": ["C#"],
-    "forDestination": "Programación 2 - ORT",
-    "description": "Desarrollar una aplicación de escritorio para la gestión de una biblioteca, permitiendo a los usuarios registrar nuevos libros, buscar y filtrar libros existentes, gestionar préstamos y devoluciones, y generar informes sobre el estado de los libros y las actividades de los usuarios.",
-    "objective": "Aplicar los conocimientos adquiridos en el curso de Programación 2, enfocándose en la programación orientada a objetos",
+    "forDestination": {
+      "es": "Programación 2 - ORT",
+      "en": "Programming 2 - ORT"
+    },
+    "description": {
+      "es": "Desarrollar una aplicación de escritorio para la gestión de una biblioteca, permitiendo a los usuarios registrar nuevos libros, buscar y filtrar libros existentes, gestionar préstamos y devoluciones, y generar informes sobre el estado de los libros y las actividades de los usuarios.",
+      "en": "Develop a desktop application for library management, allowing users to register new books, search and filter existing books, manage loans and returns, and generate reports on the status of books and user activities."
+    },
+    "objective": {
+      "es": "Aplicar los conocimientos adquiridos en el curso de Programación 2, enfocándose en la programación orientada a objetos.",
+      "en": "Apply the knowledge acquired in Programming 2, focusing on object-oriented programming."
+    },
     "date": "H2 2024",
     "githubLink": "https://github.com/Dgeymo/Obligatorio_Programacion2",
     "liveLink": "#"
   },
   {
-    "title": "Proyecto integrador de Programación 3",
+    "title": { 
+      "es": "Proyecto integrador de Programación 3",
+      "en": "Integrated Project for Programming 3"
+    },
     "type": "Web App",
     "technologies": [".NET", "C#", "Entity Framework", "SQL Server"],
-    "forDestination": "Programación 3 - ORT",
-    "description": "Crear una aplicación web para la gestión de tareas y proyectos, permitiendo a los usuarios registrarse, iniciar sesión, crear y asignar tareas, establecer fechas límite, y realizar un seguimiento del progreso de los proyectos.",
-    "objective": "Consolidar los conocimientos adquiridos en el curso de Programación 3, enfocándose en el desarrollo de aplicaciones web utilizando el framework .NET y prácticas de desarrollo modernas.",
+    "forDestination": {
+      "es": "Programación 3 - ORT",
+      "en": "Programming 3 - ORT"
+    },
+    "description": {
+      "es": "Crear una aplicación web para la gestión de tareas y proyectos, permitiendo a los usuarios registrarse, iniciar sesión, crear y asignar tareas, establecer fechas límite y realizar un seguimiento del progreso de los proyectos.",
+      "en": "Create a web application for task and project management, allowing users to register, log in, create and assign tasks, set deadlines, and track project progress."
+    },
+    "objective": {
+      "es": "Consolidar los conocimientos adquiridos en el curso de Programación 3, enfocándose en el desarrollo de aplicaciones web utilizando el framework .NET y prácticas de desarrollo modernas.",
+      "en": "Consolidate knowledge acquired in Programming 3, focusing on web application development using the .NET framework and modern development practices."
+    },
     "date": "H1 2025",
     "githubLink": "https://github.com/Dgeymo/Obligatorio_Programacion3",
     "liveLink": "#"
   },
   {
-    "title": "Proyecto integrador de Algoritmos y Estructuras de Datos",
+    "title": { 
+      "es": "Proyecto integrador de Algoritmos y Estructuras de Datos",
+      "en": "Integrated Project for Algorithms and Data Structures"
+    },
     "type": "Console App",
     "technologies": ["Java"],
-    "forDestination": "Algoritmos y Estructuras de Datos - ORT",
-    "description": "Desarrollar una aplicación de consola que implemente diversas estructuras de datos (listas, pilas, colas, árboles) y algoritmos (búsqueda, ordenamiento) para resolver problemas comunes en la gestión de datos.",
-    "objective": "Aplicar los conceptos y técnicas aprendidos en el curso de Algoritmos y Estructuras de Datos, mejorando la eficiencia y efectividad en la manipulación y gestión de datos.",
+    "forDestination": {
+      "es": "Algoritmos y Estructuras de Datos - ORT",
+      "en": "Algorithms and Data Structures - ORT"
+    },
+    "description": {
+      "es": "Desarrollar una aplicación de consola que implemente diversas estructuras de datos (listas, pilas, colas, árboles) y algoritmos (búsqueda, ordenamiento) para resolver problemas comunes en la gestión de datos.",
+      "en": "Develop a console application that implements various data structures (lists, stacks, queues, trees) and algorithms (searching, sorting) to solve common data management problems."
+    },
+    "objective": {
+      "es": "Aplicar los conceptos y técnicas aprendidos en el curso de Algoritmos y Estructuras de Datos, mejorando la eficiencia y efectividad en la manipulación y gestión de datos.",
+      "en": "Apply concepts and techniques learned in the Algorithms and Data Structures course, improving efficiency and effectiveness in data manipulation and management."
+    },
     "date": "H1 2025",
     "githubLink": "https://github.com/Dgeymo/Obligatorio_Algoritmos_EstructurasDatos",
     "liveLink": "#"
   },
   {
-    "title": "Proyecto integrador de Diseño de Aplicaciones",
+    "title": { 
+      "es": "Proyecto integrador de Diseño de Aplicaciones",
+      "en": "Integrated Project for Application Design"
+    },
     "type": "Web App",
     "technologies": ["JAVA", "Spring Boot"],
-    "forDestination": "Diseño de Aplicaciones - ORT",
-    "description": "Desarrollo de una aplicacion de peajes para la gestion de vehiculos que ingresan y salen de una autopista. La aplicacion permite registrar vehiculos, calcular tarifas de peaje segun el tipo de vehiculo y el tiempo de permanencia, generar reportes de ingresos y gestionar usuarios del sistema.",
-    "objective": "Aplicar los conocimientos adquiridos en el curso de Diseño de Aplicaciones, enfocándose en la aplicacion de principios de diseño de software y patrones arquitectonicos para crear una aplicacion robusta y escalable.",
+    "forDestination": {
+      "es": "Diseño de Aplicaciones - ORT",
+      "en": "Application Design - ORT"
+    },
+    "description": {
+      "es": "Desarrollo de una aplicación de peajes para la gestión de vehículos que ingresan y salen de una autopista. La aplicación permite registrar vehículos, calcular tarifas de peaje según el tipo de vehículo y el tiempo de permanencia, generar reportes de ingresos y gestionar usuarios del sistema.",
+      "en": "Development of a toll system application to manage vehicles entering and exiting a highway. The application allows vehicle registration, toll calculation based on vehicle type and duration, revenue reporting, and system user management."
+    },
+    "objective": {
+      "es": "Aplicar los conocimientos adquiridos en el curso de Diseño de Aplicaciones, enfocándose en la aplicación de principios de diseño de software y patrones arquitectónicos para crear una aplicación robusta y escalable.",
+      "en": "Apply knowledge acquired in the Application Design course, focusing on software design principles and architectural patterns to build a robust and scalable application."
+    },
     "date": "H2 2025",
     "githubLink": "https://github.com/Dgeymo/Obligatorio_Diseño_Aplicaciones",
     "liveLink": "#"
   },
   {
-    "title": "Proyecto integrador de Full Stack en el Backend (Parte 1)",
+    "title": { 
+      "es": "Proyecto integrador de Full Stack en el Backend (Parte 1)",
+      "en": "Integrated Project for Full Stack Backend (Part 1)"
+    },
     "type": "Api RESTful con node.js",
     "technologies": ["Node.js", "Express", "MongoDB"],
-    "forDestination": "Full Stack - ORT",
-    "description": "Desarrollar una API RESTful para la gestión de una tienda en línea, permitiendo a los usuarios realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en productos, categorías y usuarios.",
-    "objective": "Aplicar los conocimientos adquiridos en el curso de Full Stack, enfocándose en el desarrollo de APIs robustas y escalables utilizando Node.js y Express.",
+    "forDestination": {
+      "es": "Full Stack - ORT",
+      "en": "Full Stack - ORT"
+    },
+    "description": {
+      "es": "Desarrollar una API RESTful para la gestión de una tienda en línea, permitiendo a los usuarios realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en productos, categorías y usuarios.",
+      "en": "Develop a RESTful API for managing an online store, enabling CRUD operations (Create, Read, Update, Delete) on products, categories, and users."
+    },
+    "objective": {
+      "es": "Aplicar los conocimientos adquiridos en el curso de Full Stack, enfocándose en el desarrollo de APIs robustas y escalables utilizando Node.js y Express.",
+      "en": "Apply knowledge from the Full Stack course, focusing on building robust and scalable APIs using Node.js and Express."
+    },
     "date": "H2 2025",
     "githubLink": "https://github.com/Dgeymo/Obligatorio_FullStack_BackEnd",
     "liveLink": "#"
   },
   {
-    "title": "Proyecto integrador de Full Stack en el Frontend (Parte 2)",
+    "title": { 
+      "es": "Proyecto integrador de Full Stack en el Frontend (Parte 2)",
+      "en": "Integrated Project for Full Stack Frontend (Part 2)"
+    },
     "type": "Web App",
     "technologies": ["React", "CSS3", "HTML5"],
-    "forDestination": "Full Stack - ORT",
-    "description": "Desarrollar una aplicación web para la gestión de tareas y proyectos, permitiendo a los usuarios registrarse, iniciar sesión, crear y asignar tareas, establecer fechas límite, y realizar un seguimiento del progreso de los proyectos.",
-    "objective": "Consolidar los conocimientos adquiridos en el curso de Full Stack, enfocándose en el desarrollo de interfaces de usuario interactivas y responsivas utilizando React.",
+    "forDestination": {
+      "es": "Full Stack - ORT",
+      "en": "Full Stack - ORT"
+    },
+    "description": {
+      "es": "Desarrollar una aplicación web para la gestión de tareas y proyectos, permitiendo a los usuarios registrarse, iniciar sesión, crear y asignar tareas, establecer fechas límite y realizar un seguimiento del progreso de los proyectos.",
+      "en": "Develop a web application for task and project management, allowing users to register, log in, create and assign tasks, set deadlines, and track project progress."
+    },
+    "objective": {
+      "es": "Consolidar los conocimientos adquiridos en el curso de Full Stack, enfocándose en el desarrollo de interfaces de usuario interactivas y responsivas utilizando React.",
+      "en": "Consolidate knowledge acquired in the Full Stack course, focusing on building interactive and responsive user interfaces using React."
+    },
     "date": "H2 2025",
     "githubLink": "https://github.com/Dgeymo/Obligatorio_FullStack_FrontEnd",
     "liveLink": "#"

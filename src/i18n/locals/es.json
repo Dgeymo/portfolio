@@ -81,7 +81,10 @@
       "academy": "Mis Proyectos Académicos",
       "personal": "Mis Proyectos Personales",
       "professional": "Mis Proyectos Profesionales"
-    }
+    },
+    "objective": "Objetivo",
+    "technology": "Tecnología utilizada",
+    "gotToProjects": "Ver Proyecto"
   },
   "footer": {
     "cta": "Contactame"
