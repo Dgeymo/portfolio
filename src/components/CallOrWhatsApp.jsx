@@ -30,7 +30,7 @@ function CallOrWhatsApp({ phone = "+59894466583", className = "" }) {
       aria-label={`Contactar al ${phone} (móvil llama, escritorio abre WhatsApp)`}
     >
       <FaPhone className="text-xl mr-4 md:mr-0" />
-      <span> {t("about.call_me")}</span>
+      <span className="md:hidden"> {t("about.call_me")}</span>
     </a>
   );
 }

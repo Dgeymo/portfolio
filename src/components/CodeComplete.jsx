@@ -21,14 +21,17 @@ const CodeComplete = () => {
           setStep(step + 1);
           setDisplayText("");
           setCharIndex(0);
-        }, 2000); // pausa entre palabras
+        }, 1000); // pausa entre palabras
         return () => clearTimeout(timeout);
       }
     } else {
       // reinicia el ciclo
-      setStep(0);
-      setDisplayText(" ");
-      setCharIndex(0);
+      const timeout = setTimeout(() => {
+        setStep(0);
+        setDisplayText(" ");
+        setCharIndex(0);
+      }, 500);
+      return () => clearTimeout(timeout);
     }
   }, [charIndex, step]);
 

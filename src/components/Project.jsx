@@ -1,44 +1,88 @@
 import { FaGithub } from "react-icons/fa";
 import Badget from "./Badget.jsx";
+import { useTranslation } from "react-i18next";
+
+
+// El mismo helper de arriba (o importalo desde un utils)
+function useLocaleResolver() {
+  const { i18n, t } = useTranslation();
+  const getFromLocaleObject = (val) => {
+    if (typeof val !== "object" || val === null) return null;
+    const lang = i18n.language?.startsWith("en") ? "en" : "es";
+    return val[lang] ?? val.es ?? val.en ?? Object.values(val).find(Boolean) ?? null;
+  };
+  const resolveText = (val, fallback) => {
+    if (typeof val === "string") {
+      const translated = t(val);
+      if (translated === val && fallback) return fallback;
+      return translated;
+    }
+    const localized = getFromLocaleObject(val);
+    if (localized) return localized;
+    return fallback ?? "";
+  };
+  return { resolveText, t };
+}
+
+
+
+
 const Project = (props) => {
+  const { resolveText, t } = useLocaleResolver();
+
   const {
-    title,
-    type,
-    technologies,
-    forDestination,
-    description,
-    objective,
-    date,
-    githubLink,
-    liveLink,
+    title,          // string key o {es,en}
+    type,           // string o {es,en} (o clave "enums.type.webApp")
+    technologies,   // array de strings
+    forDestination, // string key o {es,en}
+    description,    // string key o {es,en}
+    objective,      // string key o {es,en}
+    date,           // string (neutral)
+    githubLink,     // string
+    liveLink,       // string
   } = props;
+
+  // Si usas enums para type, puedes mapearlo a clave:
+  // const typeKey = typeof type === "string" ? `enums.type.${type}` : type;
+
   return (
     <article className="mb-8 p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md transition-all duration-500">
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
+      <h3 className="text-xl font-bold mb-2">{resolveText(title)}</h3>
+
       <p className="italic mb-2">
-        {type} - {forDestination} - {date}
+        {resolveText(type)} - {resolveText(forDestination)} - {date}
       </p>
-      <p className="mb-4">{description}</p>
+
+      <p className="mb-4">{resolveText(description)}</p>
+
       <p className="mb-4">
-        <strong>Objetivo:</strong> {objective}
+        <strong>{t("projects.objective")}:</strong> {resolveText(objective)}
       </p>
+
       <div className="mb-4">
-        <strong>Tecnologías:</strong>
+        <strong>{t("projects.technology")}</strong>
         <ul className="list-none w-20 mt-2 flex flex-row gap-2">
           {technologies.map((tech, index) => (
-            <li key={index}><Badget text={tech} color="bg-green-600" textColor="text-gray-50" /></li>
+            <li key={index}>
+              <Badget text={tech} color="bg-green-600" textColor="text-gray-50" />
+            </li>
           ))}
         </ul>
       </div>
+
       <div className="flex space-x-4">
-        <a
-          href={githubLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-900 hover:underline flex items-center dark:text-gray-50"
-        >
-          <FaGithub className="inline mr-2 text-3xl" />Código Fuente
-        </a>
+        {githubLink && githubLink !== "#" && (
+          <a
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-900 hover:underline flex items-center dark:text-gray-50"
+          >
+            <FaGithub className="inline mr-2 text-3xl" />
+            {t("projects.gotToProjects")}
+          </a>
+        )}
+
         {liveLink && liveLink !== "#" && (
           <a
             href={liveLink}
@@ -46,7 +90,7 @@ const Project = (props) => {
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline dark:text-blue-400"
           >
-            Live Demo
+            {t("projects.liveDemo")}
           </a>
         )}
       </div>
@@ -55,3 +99,4 @@ const Project = (props) => {
 };
 
 export default Project;
+
