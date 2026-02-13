@@ -46,20 +46,20 @@ const Project = (props) => {
   // const typeKey = typeof type === "string" ? `enums.type.${type}` : type;
 
   return (
-    <article className="mb-8 p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md transition-all duration-500">
+    <article className="mb-8 py-3 px-12 bg-white dark:bg-gray-700 rounded-lg shadow-md transition-all duration-500">
       <h3 className="text-xl font-bold mb-2">{resolveText(title)}</h3>
 
-      <p className="italic mb-2">
+      <p className="italic mb-2 justify-stretching text-sm text-gray-600 dark:text-gray-400">
         {resolveText(type)} - {resolveText(forDestination)} - {date}
       </p>
 
-      <p className="mb-4">{resolveText(description)}</p>
+      <p className="mb-4 text-justify">{resolveText(description)}</p>
 
-      <p className="mb-4">
+      <p className="mb-4 text-justify">
         <strong>{t("projects.objective")}:</strong> {resolveText(objective)}
       </p>
 
-      <div className="mb-4">
+      <div className="mb-4 ">
         <strong>{t("projects.technology")}</strong>
         <ul className="list-none w-20 mt-2 flex flex-row gap-2">
           {technologies.map((tech, index) => (

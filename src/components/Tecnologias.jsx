@@ -27,10 +27,10 @@ const Tecnologias = () => {
 
 
   return (
-    <section className="p-6 bg-gray-50 dark:bg-gray-800 transition-all duration-500 my-6 rounded-xs">
+    <section className="md:p-6 p-2 bg-gray-50 dark:bg-gray-800 transition-all duration-500 my-6 rounded-xs">
       <article className="mx-auto items-center flex flex-col md:items-start">
         <h2 className="text-2xl font-bold mb-4">{t("technology.coreLanguages")}</h2>
-        <div className="space-x-2 flex flex-row flex-wrap mb-6">
+        <div className="space-x-2 flex flex-row flex-wrap justify-center md:justify-start mb-6">
           {LanguageCoreData.map((lang, index) => (
             <Badget
               key={index}
@@ -42,7 +42,7 @@ const Tecnologias = () => {
           ))}
         </div>
         <h2 className="text-2xl font-bold mb-4">{t("technology.frameworksAndLibraries")}</h2>
-        <div className="space-x-2 flex flex-row flex-wrap mb-6">
+        <div className="space-x-2 flex flex-row flex-wrap mb-6 justify-center md:justify-start">
           {fw.map( (fw, index) => (
             <Badget
               key={index}
