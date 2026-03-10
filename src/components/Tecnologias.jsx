@@ -26,7 +26,7 @@ const Tecnologias = () => {
 
 
   return (
-    <section className="md:p-6 p-2 bg-white dark:bg-gray-800 transition-all duration-500 my-6 rounded-md dark:border dark:border-gray-700 shadow-lg">
+    <section className="md:p-6 p-2 bg-white dark:bg-gray-800 transition-all duration-500 my-6 rounded-md border border-white dark:border-gray-700 shadow-lg">
       <article className="mx-auto items-center flex flex-col md:items-start">
         <h2 className="text-2xl font-bold mb-4">{t("technology.coreLanguages")}</h2>
         <div className="space-x-2 flex flex-row flex-wrap justify-center md:justify-start mb-6">

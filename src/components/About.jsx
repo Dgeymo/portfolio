@@ -13,7 +13,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="px-2 md:px-6 py-16 bg-white/70 dark:bg-gray-800/60 dark:border rounded-md dark:border-gray-700 shadow-lg items-center transition-all duration-500"
+      className="px-2 md:px-6 py-16 bg-white/70 dark:bg-gray-800/60 border rounded-md border-white dark:border-gray-700 shadow-lg items-center transition-all duration-500"
     >
       <div className="flex text-center md:items-start flex-col mx-auto md:text-left ">
         <div className="flex flex-col items-center md:flex-row space-y-2 ">
