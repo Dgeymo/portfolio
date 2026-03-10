@@ -5,13 +5,13 @@ const Education = () => {
     const educationData = JSON.parse(JSON.stringify(EducationData));
     const { t } = useTranslation();
     return (
-        <section id="education" className="bg-gray-50 dark:bg-gray-800  p-6 rounded-xs" >
+        <section id="education" className="bg-white dark:bg-gray-800  p-6 rounded-md dark:border dark:border-gray-700 shadow-lg" >
             <h2 className="text-2xl font-bold mb-6">{t("education.title")}</h2>
             <div className="space-y-6">
                 {educationData.map((edu, index) => (
                     <div
                         key={index}
-                        className="bg-white dark:bg-gray-950 rounded-lg p-4 transition-all duration-300 hover:shadow-lg"
+                        className="bg-white dark:bg-gray-950 rounded-lg p-4 transition-all duration-300 hover:shadow-lg border"
                     >
                         <h3 className="text-lg font-semibold">{t(edu.institutionKey)}</h3>
                         <p className="italic">{t(edu.titleKey)}</p>

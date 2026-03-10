@@ -9,7 +9,7 @@ import Project from "./Project";
 function ProjectsCarousel({ projects }) {
   const { t } = useTranslation();
   return (
-    <section className=" bg-gray-50 dark:bg-gray-800 rounded-md transition-all duration-500 md:p-6 my-6">
+    <section className=" bg-gray-50 dark:bg-gray-800 rounded-md transition-all duration-500 my-6 border dark:border-gray-700">
       <h2 className="text-2xl font-bold mb:mb-4 p-6 flex-shrink-0">
         {t("projects.title.academy")}
       </h2>
