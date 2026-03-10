@@ -13,14 +13,16 @@ const About = () => {
   return (
     <section
       id="about"
-      className="px-2 md:px-6 py-16 bg-gray-50 dark:bg-gray-800 items-center transition-all duration-500"
+      className="px-2 md:px-6 py-16 bg-white/70 dark:bg-gray-800/60 dark:border rounded-md dark:border-gray-700 shadow-lg items-center transition-all duration-500"
     >
-      <div className="flex text-center md:items-start flex-col mx-auto md:text-left rounded-md">
+      <div className="flex text-center md:items-start flex-col mx-auto md:text-left ">
         <div className="flex flex-col items-center md:flex-row space-y-2 ">
           <figure className="md:flex-shrink-0">
             <img
               src={portada}
               alt="Diego Geymonat"
+              width="208"
+              height="208"
               className="w-52 h-52 rounded-full border-2 md:float-start md:mr-8 object-cover object-top dark:bg-gray-200 bg-gray-100 border-gray-100 transition-all duration-500"
             />
           </figure>
@@ -89,7 +91,7 @@ const About = () => {
         </div>
 
         <div className="mt-6">
-          <h3 className="text-2xl font-bold flex items-center space-x-2">
+          <h3 className="text-2xl font-bold flex items-center space-x-2 ">
             {t("about.title")}
           </h3>
           <p className=" text-lg leading-relaxed text-justify">

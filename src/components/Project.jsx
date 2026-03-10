@@ -46,7 +46,7 @@ const Project = (props) => {
   // const typeKey = typeof type === "string" ? `enums.type.${type}` : type;
 
   return (
-    <article className="mb-8 py-3 px-12 bg-white dark:bg-gray-700 rounded-lg shadow-md transition-all duration-500">
+    <article className="mb-8 py-6 px-6 md:px-8 bg-white dark:bg-gray-800/60 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200 dark:border-gray-700 ">
       <h3 className="text-xl font-bold mb-2">{resolveText(title)}</h3>
 
       <p className="italic mb-2 justify-stretching text-sm text-gray-600 dark:text-gray-400">

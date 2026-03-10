@@ -2,7 +2,7 @@ import { FaMoon, FaSun } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 const DarkModeToggle = ({ darkMode, setDarkMode }) => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
   return (
     <button
       type="button"
@@ -11,11 +11,13 @@ const DarkModeToggle = ({ darkMode, setDarkMode }) => {
     >
       {darkMode ? (
         <>
-          <FaSun className="mr-1" /> <span className="hidden md:inline">{t("header.mode.light")}</span>
+          <FaSun className="mr-1" />{" "}
+          <span className="hidden md:inline">{t("header.mode.light")}</span>
         </>
       ) : (
-        < >
-          <FaMoon className="mr-1" /> <span className="hidden md:inline">{t("header.mode.dark")}</span>
+        <>
+          <FaMoon className="mr-1" />{" "}
+          <span className="hidden md:inline">{t("header.mode.dark")}</span>
         </>
       )}
     </button>
