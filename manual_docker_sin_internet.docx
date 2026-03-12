@@ -1,0 +1,42 @@
+Manual: Despliegue de imagen Docker en servidor sin conexión a internet
+
+1. Construir la imagen Docker en una máquina con internet
+--------------------------------------------------------
+Abre una terminal en la carpeta del proyecto y ejecuta:
+
+    docker build -t mi-app:latest .
+
+Esto crea una imagen llamada "mi-app" con la última versión.
+
+2. Guardar la imagen en un archivo
+----------------------------------
+
+    docker save -o mi-app.tar mi-app:latest
+
+Esto genera el archivo "mi-app.tar" con la imagen Docker.
+
+3. Transferir el archivo al servidor
+------------------------------------
+Copia el archivo "mi-app.tar" a un pendrive, disco externo o medio físico y llévalo al servidor sin internet.
+
+4. Cargar la imagen en el servidor
+----------------------------------
+En el servidor, copia "mi-app.tar" y ejecuta:
+
+    docker load -i mi-app.tar
+
+Esto importa la imagen al Docker local del servidor.
+
+5. Ejecutar el contenedor
+-------------------------
+
+    docker run -d -p 80:80 --name mi-app mi-app:latest
+
+Esto inicia el contenedor y expone el puerto 80.
+
+Notas:
+- Puedes cambiar el nombre "mi-app" por el que prefieras.
+- Si tu app usa otro puerto, ajusta el parámetro -p.
+- Asegúrate de tener Docker instalado en el servidor.
+
+Fin del manual.

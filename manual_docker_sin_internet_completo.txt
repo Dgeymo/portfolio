@@ -1,0 +1,62 @@
+Manual: Despliegue de imagen Docker en servidor sin conexión a internet
+
+1. Construir la imagen Docker en una máquina con internet
+--------------------------------------------------------
+Abre una terminal en la carpeta del proyecto y ejecuta:
+
+    docker build -t mi-app:latest .
+
+Esto crea una imagen llamada "mi-app" con la última versión.
+
+2. Guardar la imagen en un archivo
+----------------------------------
+
+    docker save -o mi-app.tar mi-app:latest
+
+Esto genera el archivo "mi-app.tar" con la imagen Docker.
+
+3. Transferir el archivo al servidor
+------------------------------------
+Copia el archivo "mi-app.tar" a un pendrive, disco externo o medio físico y llévalo al servidor sin internet.
+
+4. Instalar Docker en el servidor Linux
+---------------------------------------
+
+Ejecuta los siguientes comandos como root o con sudo:
+
+    sudo apt-get update
+    sudo apt-get install -y ca-certificates curl gnupg
+    sudo install -m 0755 -d /etc/apt/keyrings
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    echo "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    sudo apt-get update
+    sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+Verifica la instalación:
+
+    sudo docker --version
+
+5. Cargar la imagen en el servidor
+----------------------------------
+En el servidor, copia "mi-app.tar" y ejecuta:
+
+    docker load -i mi-app.tar
+
+Esto importa la imagen al Docker local del servidor.
+
+6. Ejecutar el contenedor y asegurar reinicio automático
+--------------------------------------------------------
+
+    docker run -d -p 80:80 --name mi-app --restart unless-stopped mi-app:latest
+
+El parámetro --restart unless-stopped hace que el contenedor se reinicie automáticamente si el servidor se reinicia o si el contenedor falla.
+
+Notas:
+- Puedes cambiar el nombre "mi-app" por el que prefieras.
+- Si tu app usa otro puerto, ajusta el parámetro -p.
+- Asegúrate de tener Docker instalado en el servidor.
+- Para ver el estado de los contenedores: docker ps -a
+- Para detener el contenedor: docker stop mi-app
+- Para iniciarlo manualmente: docker start mi-app
+
+Fin del manual.
