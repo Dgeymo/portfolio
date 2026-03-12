@@ -1,33 +1,25 @@
-# Dockerfile para desplegar una app Vite + React en Render
-# Usa una imagen oficial de Node.js como base
-FROM node:18-alpine as build
+# ---- Build Stage ----
+FROM node:25.8.1-alpine as build
 
-# Establece el directorio de trabajo
 WORKDIR /app
 
-# Copia los archivos de dependencias
 COPY package.json package-lock.json* yarn.lock* ./
-
-# Instala las dependencias
 RUN npm install --frozen-lockfile || yarn install --frozen-lockfile
 
-# Copia el resto de la aplicación
 COPY . .
-
-# Construye la aplicación para producción
 RUN npm run build || yarn build
 
-# --- Etapa de producción ---
+# ---- Production Stage ----
 FROM nginx:alpine
 
-# Copia los archivos estáticos generados al directorio de Nginx
+# Copiar template en vez de nginx.conf
+COPY nginx/default.conf.template /etc/nginx/templates/default.conf.template
+
+# Copiar build de Vite
 COPY --from=build /app/dist /usr/share/nginx/html
 
-# Copia configuración personalizada de Nginx para SPA (React Router DOM)
-COPY nginx.conf /etc/nginx/nginx.conf
+# Render usa $PORT (por defecto 10000)
+ENV PORT=8080
+EXPOSE 8080
 
-# Expone el puerto 80
-EXPOSE 80
-
-# Comando por defecto para iniciar Nginx
 CMD ["nginx", "-g", "daemon off;"]
