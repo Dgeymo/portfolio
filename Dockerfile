@@ -22,4 +22,5 @@ COPY --from=build /app/dist /usr/share/nginx/html
 ENV PORT=8080
 EXPOSE 8080
 
+# ---- Command line ----
 CMD ["nginx", "-g", "daemon off;"]

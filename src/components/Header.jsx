@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const Header = ({ darkMode, setDarkMode, language, setLanguage }) => {
   const { t } = useTranslation();
   return (
-    <header className="p-4 flex justify-between items-center rounded-md dark:bg-gray-900/30 bg-white/30 border border-white dark:border-gray-700  px-6 mt-2 mb-4">
+    <header className="p-4 flex justify-between items-center rounded-md dark:bg-gray-900/30 bg-white/30 border border-gray-50 dark:border-gray-700  px-6 mt-2 mb-4">
       <h1 className="text-2xl font-bold flex items-center space-x-2">
         <IoCode className="text-5xl text-green-700" />
         <span>{t("header.title")}</span>

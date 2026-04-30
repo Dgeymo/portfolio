@@ -20,6 +20,16 @@
     "databases": "Databases",
     "toolsAndPlatforms": "Tools and Platforms"
   },
+  "experienceTitle": "Experience",
+  "experience2": {
+    "title": "Teaching Assistant",
+    "period": "April 2026 - Present",
+    "company": "Universidad ORT Uruguay | Montevideo, Uruguay",
+    "skill1": "Academic Assistance:",
+    "detailsSkill1": "I provide academic support in theoretical and practical classes, tutoring and consultation hours for Programming 2 and Web Design students.",
+    "skill2": "Tasks and responsibilities:",
+    "detailsSkill2": "I facilitate the understanding of complex concepts such as design patterns, SOLID principles and agile methodologies. I accompany students in solving practical exercises, fostering active learning and the application of knowledge in real projects. I promote good development practices, including version control, documentation and testing, preparing students for the labor market."
+  },
   "experience": {
     "title": "Experience",
     "company": "EQUITAL S.A. | Montevideo, Uruguay | 2005 - Present",
@@ -31,6 +41,26 @@
     "detailsSkill3": "Implementation of advanced technological solutions, optimizing intersectoral processes by 30%.",
     "skill4": "Leadership:",
     "detailsSkill4": "Training staff in new technologies, fostering continuous improvement and adoption of new tools."
+  },
+  "projectOwnerTitle": "Featured Projects",
+  "titleProblem": "Challenge:",
+  "objetiveProject": "Objective:",
+  "technologyProject": "Technology used:",
+  "project1": {
+    "title": "System for managing telecommunications equipment in the field",
+    "releaseDate": "H1-2026",
+    "detailsProject1": "Development of a mobile application for managing telecommunications equipment in the field, using .NET for the backend and React for the frontend.",
+    "problemProject1": "Faced challenges in efficiently managing telecommunications equipment in the field, resulting in delays.",
+    "objectiveProject1": "Optimize field equipment management, improving operational efficiency, reducing response times and visualizing task progress status in real time. Export data to Excel for analysis and reporting.",
+    "technologyProject1": "ASP.NET, React, SQL Server."
+  },
+  "project2": {
+    "title": "Python scripts for data visualization",
+    "releaseDate": "H2-2025",
+    "detailsProject2": "Development of a script for reading data in excel and visualizing information in a geospatial way.",
+    "problemProject2":"Need to validate the information received in excel format, through a model in map of the markers.",
+    "objetiveProject2":"Optimize data validation, through the geospatial visualization of the markers, facilitating the identification of patterns and anomalies in the information received.",
+    "technologyProject2":"Python, Pandas, Geopandas, Matplotlib."
   },
   "education": {
     "title": "Education",
