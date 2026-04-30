@@ -9,6 +9,7 @@ import i18n from "./i18n/i18n.js";
 const ProjectsCarousel = lazy(() => import("./components/ProjectCarousel.jsx"));
 import projectsData from "./data/projects.json";
 import Education from "./components/Education.jsx";
+import ProjectOwner from "./components/ProjectOwner.jsx";
 
 function App() {
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -88,7 +89,7 @@ function App() {
       {/* Skip link accesible */}
       <a href="#main" className="skip-link absolute left-2 top-2 bg-white text-blue-700 px-3 py-1 rounded z-50 focus:translate-y-0 -translate-y-16 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-transform duration-200">Saltar al contenido</a>
 
-      <div className="px-2 pb-2 max-w-[1200px] mx-auto text-gray-900 dark:text-stone-300 min-h-screen transition-all duration-500 bg-white/60 dark:bg-gray-900/60 rounded-md border dark:border-gray-700">
+      <div className="px-2 pb-2 max-w-[1200px] mx-auto text-gray-900 dark:text-stone-300 min-h-screen transition-all duration-500 bg-white/60 dark:bg-gray-900/60 rounded-md border dark:border-gray-700 border-gray-50">
         <Header
           darkMode={darkMode}
           setDarkMode={setDarkMode}
@@ -102,6 +103,7 @@ function App() {
           <Suspense fallback={<div className="my-8 text-center text-blue-600">Cargando proyectos…</div>}>
             <ProjectsCarousel projects={projects} />
           </Suspense>
+          <ProjectOwner />
           <Education />
         </main>
       </div>

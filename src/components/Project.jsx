@@ -42,11 +42,8 @@ const Project = (props) => {
     liveLink,       // string
   } = props;
 
-  // Si usas enums para type, puedes mapearlo a clave:
-  // const typeKey = typeof type === "string" ? `enums.type.${type}` : type;
-
   return (
-    <article className="mb-8 py-6 px-6 md:px-8 bg-white dark:bg-gray-800/60 rounded-md shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700 ">
+    <article className="mb-8 p-6 md:px-8 bg-white dark:bg-gray-800/60 rounded-md shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700 ">
       <h3 className="text-xl font-bold mb-2">{resolveText(title)}</h3>
 
       <p className="italic mb-2 justify-stretching text-sm text-gray-600 dark:text-gray-400">

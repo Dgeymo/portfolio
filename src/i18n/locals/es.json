@@ -20,9 +20,11 @@
     "databases": "Bases de datos",
     "toolsAndPlatforms": "Herramientas y plataformas"
   },
+  "experienceTitle": "Experiencia",
   "experience": {
-    "title": "Experiencia",
-    "company": "EQUITAL S.A. | Montevideo, Uruguay | 2005 - Presente",
+    "title": "Supervisor en Planificación Técnica",
+    "period": "Marzo 2005 - Presente",
+    "company": "EQUITAL S.A. | Montevideo, Uruguay",
     "skill1": "Gestión de Proyectos:",
     "detailsSkill1": "Coordinación y planificación de infraestructura, aplicando metodologías transferibles a IT.",
     "skill2": "Trabajo en Equipo:",
@@ -31,6 +33,45 @@
     "detailsSkill3": "Implementación de soluciones tecnológicas avanzadas, optimizando procesos intersectoriales en un 30%.",
     "skill4": "Liderazgo:",
     "detailsSkill4": "Capacitación de personal en nuevas tecnologías, fomentando mejora continua y adopción de nuevas herramientas."
+  },
+  "experience2": {
+    "title": "Ayudantía de cátedra",
+    "period": "Abril 2026 - Presente",
+    "company": "Universidad ORT Uruguay | Montevideo, Uruguay",
+    "skill1": "Asistencia Académica:",
+    "detailsSkill1": "Brindo apoyo académico en clases teóricas y prácticas, tutorías y guardias de consulta para estudiantes de Programación 2 y Diseño Web.",
+    "skill2": "Tareas y responsabilidades:",
+    "detailsSkill2": "Facilito la comprension de conceptos complejos como patrones de diseño, principios SOLID y metodologías ágiles. Acompaño a los estudiantes en la resolución de ejercicios prácticos, fomentando el aprendizaje activo y la aplicación de conocimientos en proyectos reales. Promuevo buenas prácticas de desarrollo, incluyendo control de versiones, documentación y pruebas, preparando a los estudiantes para el mundo laboral."
+  },
+  "projectOwnerTitle": "Proyectos Destacados",
+  "titleProblem": "Desafío:",
+  "objetiveProject": "Objetivo:",
+  "technologyProject": "Tecnología utilizada:",
+  "project1": {
+    "title": "Sistema de gestión de equipos de telecomunicaciones en campo",
+    "releaseDate": "H1-2026",
+    "detailsProject1": "Desarrollo de una aplicación móvil para la gestión de equipos de telecomunicaciones en campo, utilizando .NET para el backend y React para el frontend.",
+    "problemProject1": "Se enfrentaba desafíos en la gestión eficiente de equipos de telecomunicaciones en campo, lo que resultaba en retrasos.",
+    "objectiveProject1": "Optimizar la gestión de equipos en campo, mejorando la eficiencia operativa, reduciendo tiempos de respuesta y visualizando el estado del avance de las tareas en tiempo real. Exportar datos a Excel para análisis y reportes.",
+    "technologyProject1": "ASP.NET, React, SQL Server."
+  },
+  "project2": {
+    "title": "Scripts en Python para visualización de datos",
+    "releaseDate": "H2-2025",
+    "detailsProject2": "Desarrollo de script para lectura de datos en excel y visualización de información de manera geoespacial.",
+    "problemProject2":"Necesidad de validar la información recibida en formato excel, mediante un modelo en mapa de los marcadores.",
+    "objetiveProject2":"Optimizar la validación de datos, mediante la visualización geoespacial de los marcadores, facilitando la identificación de patrones y anomalías en la información recibida.",
+    "technologyProject2":"Python, Pandas, Geopandas, Matplotlib."
+  },
+  "project3": {
+    "title": "Implementación de un sistema de control de versiones con Git",
+    "detailsProject3": "Implementación de un sistema de control de versiones con Git, para gestionar el código fuente de los proyectos."
+  },
+  "project4": {
+    "title": "Desarrollo de una API RESTful con Node.js y Express"
+  },
+  "project5": {
+    "title": "Creación de una base de datos relacional con MySQL"
   },
   "education": {
     "title": "Formación",
