@@ -13,7 +13,7 @@ const ProjectOwner = () => {
           <figure>
             <img
               className="max-w-[600px] min-w-[400px] w-full h-auto"
-              src="src\assets\movilEq\MovilEq.png"
+              src="..\assets\movilEq\MovilEq.png"
               alt=""
             />
           </figure>
@@ -53,7 +53,7 @@ const ProjectOwner = () => {
           <figure>
             <img
               className="max-w-[600px] min-w-[400px] w-full h-auto"
-              src="src\assets\Pandas.png"
+              src="..\assets\Pandas.png"
               alt=""
             />
           </figure>
