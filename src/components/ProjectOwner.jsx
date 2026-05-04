@@ -13,12 +13,11 @@ const ProjectOwner = () => {
         </h4>
         <div className="md:flex md:items-center mt-4 justify-center">
           <figure>
-            <img
-              className="max-w-[600px] min-w-[400px] w-full h-auto"
+            <img             
               src={eqmovil}
               alt="imagen de aplicación"
             />
-          </figure>>>>>>>> main
+          </figure>
 
           <div>
             <p className="mt-4 text-gray-600 dark:text-gray-400">
@@ -54,8 +53,7 @@ const ProjectOwner = () => {
         </h4>
         <div className="md:flex md:items-center mt-4 justify-center">
           <figure>
-            <img
-              className="max-w-[600px] min-w-[400px] w-full h-auto"
+            <img           
               src={pandas}
               alt="imagen de aplicación"
             />
