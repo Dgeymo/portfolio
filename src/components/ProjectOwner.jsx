@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
-
+import eqmovil from "../assets/movilEq/MovilEq.png";
+import pandas from "../assets/Pandas.png";
 const ProjectOwner = () => {
+
   const { t } = useTranslation();
   return (
     <div className="space-y-4 p-6 bg-white shadow dark:bg-gray-800 hover:shadow-md transition-all duration-500 my-6 rounded-md border border-white dark:border-gray-800">
@@ -11,8 +13,13 @@ const ProjectOwner = () => {
         </h4>
         <div className="md:flex md:items-center mt-4 justify-center">
           <figure>
-            <img src="src\assets\movilEq\MovilEq.png" alt="" />
-          </figure>
+            <img
+              className="max-w-[600px] min-w-[400px] w-full h-auto"
+              src={eqmovil}
+              alt="imagen de aplicación"
+            />
+          </figure>>>>>>>> main
+
           <div>
             <p className="mt-4 text-gray-600 dark:text-gray-400">
               {t("project1.detailsProject1")}
@@ -47,7 +54,11 @@ const ProjectOwner = () => {
         </h4>
         <div className="md:flex md:items-center mt-4 justify-center">
           <figure>
-            <img src="src\assets\Pandas.png" alt="" />
+            <img
+              className="max-w-[600px] min-w-[400px] w-full h-auto"
+              src={pandas}
+              alt="imagen de aplicación"
+            />
           </figure>
           <div>
             <p className="mt-4 text-gray-600 dark:text-gray-400">
