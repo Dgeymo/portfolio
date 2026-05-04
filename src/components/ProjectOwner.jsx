@@ -9,13 +9,9 @@ const ProjectOwner = () => {
         <h4 className="text-gray-700 dark:text-gray-300 text-xl font-bold block text-center">
           {t("project1.title")}
         </h4>
-        <div className="md:flex md:items-start mt-4 justify-center items-center">
+        <div className="md:flex md:items-center mt-4 justify-center">
           <figure>
-            <img
-              className="max-w-[600px] min-w-[400px] w-full h-auto"
-              src="src\assets\movilEq\MovilEq.png"
-              alt=""
-            />
+            <img src="src\assets\movilEq\MovilEq.png" alt="" />
           </figure>
           <div>
             <p className="mt-4 text-gray-600 dark:text-gray-400">
@@ -49,13 +45,9 @@ const ProjectOwner = () => {
         <h4 className="text-gray-700 dark:text-gray-300 text-xl font-bold block text-center">
           {t("project2.title")}
         </h4>
-        <div className="md:flex md:items-start mt-4 justify-center items-center">
+        <div className="md:flex md:items-center mt-4 justify-center">
           <figure>
-            <img
-              className="max-w-[600px] min-w-[400px] w-full h-auto"
-              src="src\assets\Pandas.png"
-              alt=""
-            />
+            <img src="src\assets\Pandas.png" alt="" />
           </figure>
           <div>
             <p className="mt-4 text-gray-600 dark:text-gray-400">
